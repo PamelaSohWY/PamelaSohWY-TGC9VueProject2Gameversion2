@@ -9,12 +9,14 @@
 
 import Basic from "./components/Basic"
 import randomNumber from "./components/randomNumber"
+import Board from "./components/Board"
 
 export default {
   name: 'App',
   components: {
       Basic,
-      randomNumber
+      randomNumber, 
+      Board
   }
 }
 </script>
