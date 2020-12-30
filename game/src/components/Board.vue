@@ -18,14 +18,14 @@ export default {
     data: function(){
         return{
             grid:[
-                [1,2,3,4,5,6,7],
-                [8,9,10,11,12,13,14],
-                [15,16,17,18,19,20,21],
-                [22,23,24,25,26,27,28],
-                [29,30,31,32,33,34,35],
-                [36,37,38,39,40,41,42],
-                [43,44,45,46,47,48,49],
-                [50,51,52,53,54,55,56]
+                [7,9,3,8,2,11,10],
+                [4,2,9,5,12,5,12],
+                [10,6,4,7,4,7,9],
+                [3,10,6,2,8,12,3],
+                [8,5,9,11,3,6,11],
+                [11,7,8,3,5,8,4],
+                [10,2,6,7,10,2,6],
+                [5,12,11,4,7,9,12]
             ],
         }; // end of return
     },// end of data function
@@ -41,6 +41,8 @@ mounted: function(){
 methods:{
     change: function(){
         this.$set(this.grid[0],0, Math.floor(Math.random()*6));
+        //traversal of array = map return
+        // look through array and extract all row, and set the cells 
     }, // end of change    }
     } // end of methods
     } //end of export default

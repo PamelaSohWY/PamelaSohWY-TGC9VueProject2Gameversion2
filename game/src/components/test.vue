@@ -1,0 +1,1 @@
+// https://codereview.stackexchange.com/questions/237953/vue-component-for-game-die-dice
