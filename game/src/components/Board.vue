@@ -7,6 +7,7 @@
             <tr v-for="(row,rindex) in grid" v-bind:key="rindex">
                 <td v-for="(col,cindex) in row" v-bind:key="cindex"> 
                     <!-- colon must be next to key -->
+
                     {{col}}
                     </td>
                     </tr>
@@ -33,8 +34,8 @@ export default {
     },// end of data function
     
 mounted: function(){
-    for(let i=0; i<7; i++){
-        for(let j=0; j<8; j++){
+    for(let i=0; i<8; i++){
+        for(let j=0; j<7; j++){
     this.$set(this.grid[0],j,Math.floor(Math.random()*(6-1+1))+1);
 
         }//end of j
@@ -52,7 +53,7 @@ methods:{
 
 </script>
 <style>
-.grid {
+td {
   border: 1px solid black;
   width: 50px;
   height: 50px;
