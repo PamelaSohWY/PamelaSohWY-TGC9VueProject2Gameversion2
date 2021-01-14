@@ -1,7 +1,7 @@
 <template>
-  <div>
-    {{randomNumber1}}
-    {{randomNumber2}}
+  <div class="dice">
+   <h1 class=dice1> {{randomNumber1}} </h1>
+   <h1 class=dice2> {{randomNumber2}} </h1>
     <button @click="roll">Roll Dice</button> 
   </div>
 </template>
@@ -34,5 +34,19 @@ methods: {
 }
 </script>
 <style>
-
+.dice1{
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 32px;
+  
+}
+.dice2{
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 32px;
+}
 </style>

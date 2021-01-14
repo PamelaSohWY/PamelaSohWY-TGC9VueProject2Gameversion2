@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>from board</h1>
+    <h1>Step 2: Click the answer in the board. 
+        Try to get a horizontal or vertical line of 4 numbers. 
+    </h1>
         <table> 
             <tr v-for="(row,rindex) in grid" v-bind:key="rindex">
                 <td v-for="(col,cindex) in row" v-bind:key="cindex"> 
@@ -9,7 +11,7 @@
                     </td>
                     </tr>
         </table>
-        <button @click="change()">Changeboard</button>
+        <!-- <button @click="change()">Changeboard</button> -->
     </div> 
 </template>
  
@@ -40,7 +42,8 @@ mounted: function(){
         },//end of mounted function
 methods:{
     change: function(){
-        this.$set(this.grid[0],0, Math.floor(Math.random()*6));
+        this.$set(this.grid[0],0, Math.floor(Math.random()*12));
+        this.$set(this.grid[0],1, Math.floor(Math.random()*12));
         //traversal of array = map return
         // look through array and extract all row, and set the cells 
     }, // end of change    }
@@ -49,4 +52,11 @@ methods:{
 
 </script>
 <style>
+.grid {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 32px;
+}
 </style> 

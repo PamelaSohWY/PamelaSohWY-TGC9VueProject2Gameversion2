@@ -1,5 +1,6 @@
 # TGC9VueProject2Game
 URL: https://github.com/PamelaSohWY/TGC9VueProject2Game
+Deployed: https://competent-lamarr-3190ae.netlify.app
 by Soh Wei- Yi Pamela 
 
 **Scope**    
